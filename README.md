@@ -8,9 +8,7 @@ Windows development environment scripts for tools, folders, project templates, d
 - Folder generation
 - Tool/version checks
 - Project template generation
-- GitHub repo creation
 - Dotfile backup and restore
-- Git snapshot helper
 - Local config support
 
 ## Package groups
