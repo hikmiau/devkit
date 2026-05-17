@@ -1,4 +1,4 @@
-﻿# aira-devkit
+﻿# devkit
 
 Windows development environment scripts for tools, folders, project templates, dotfiles, and Git workflow.
 
