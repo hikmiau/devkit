@@ -2,6 +2,70 @@
 
 Windows development environment scripts for tools, folders, project templates, dotfiles, and Git workflow.
 
+## Personal setup notice
+
+This repository is based on my personal Windows development setup.
+
+The tools listed here are the ones I use for my own workflow, including Neovim, IntelliJ IDEA, Visual Studio, Git, Java, C#, Python, Lua, PowerShell, SQL, Kubernetes, Figma, GIMP, Discord, and other development utilities.
+
+Before running the install script, check the configuration file and remove anything you do not want to install.
+
+Main config file:
+
+```text
+config/devkit.json
+```
+
+The install script does not choose tools automatically. It installs the package groups listed in the config file.
+
+## Customizing the tools
+
+To change what gets installed, edit:
+
+```text
+config/devkit.json
+```
+
+Inside the file, change the `packageGroups` section.
+
+Example:
+
+```json
+"packageGroups": {
+  "core": [
+    "neovim",
+    "git",
+    "gh",
+    "lazygit"
+  ],
+  "languages": [
+    "python",
+    "openjdk",
+    "dotnet-sdk"
+  ]
+}
+```
+
+Then run only the group you want:
+
+```powershell
+.\scripts\Install-DevPackages.ps1 -Groups core
+```
+
+Or run multiple groups:
+
+```powershell
+.\scripts\Install-DevPackages.ps1 -Groups core,languages
+```
+
+Running this installs everything listed in every group:
+
+```powershell
+.\scripts\Install-DevPackages.ps1 -Groups all
+```
+
+Review the config before using `-Groups all`.
+
 ## Features
 
 - Chocolatey package groups
@@ -25,6 +89,8 @@ Windows development environment scripts for tools, folders, project templates, d
 | `scripts/Invoke-GitSnapshot.ps1`  | Adds, commits, and pushes changes   |
 
 ## Usage
+
+> This setup is personal. Review `config/devkit.json` before running the install commands.
 
 Clone the repository:
 
@@ -156,29 +222,6 @@ config/devkit.local.json
 ```
 
 The local config file is ignored by Git, so it can be used for private paths or personal changes.
-
-## Tools
-
-- Neovim
-- IntelliJ IDEA
-- Visual Studio
-- Git
-- GitHub CLI
-- LazyGit
-- Kubernetes CLI
-- Figma
-- GIMP
-- npm
-- Zig
-- Discord
-- Java
-- C#
-- MySQL
-- SQLite
-- Python
-- Lua
-- PowerShell
-- Batch
 
 ## Project structure
 
