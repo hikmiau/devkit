@@ -29,8 +29,8 @@ Windows development environment scripts for tools, folders, project templates, d
 Clone the repository:
 
 ```powershell
-git clone https://github.com/hikmiau/aira-devkit.git
-cd aira-devkit
+git clone https://github.com/hikmiau/devkit.git
+cd devkit
 ```
 
 Install the core tools:
