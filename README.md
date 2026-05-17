@@ -183,7 +183,7 @@ The local config file is ignored by Git, so it can be used for private paths or 
 ## Project structure
 
 ```text
-aira-devkit
+devkit
 ├── config
 │   └── devkit.json
 ├── dotfiles
