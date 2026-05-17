@@ -1,0 +1,200 @@
+﻿{
+    "projectRoot":  "%USERPROFILE%\\Coding\\Projects",
+    "folderGroups":  {
+                         "main":  [
+                                      "%USERPROFILE%\\Coding\\Projects",
+                                      "%USERPROFILE%\\Coding\\School",
+                                      "%USERPROFILE%\\Coding\\Experiments"
+                                  ],
+                         "languages":  [
+                                           "%USERPROFILE%\\Coding\\Java",
+                                           "%USERPROFILE%\\Coding\\CSharp",
+                                           "%USERPROFILE%\\Coding\\Python",
+                                           "%USERPROFILE%\\Coding\\Lua",
+                                           "%USERPROFILE%\\Coding\\PowerShell",
+                                           "%USERPROFILE%\\Coding\\Batch",
+                                           "%USERPROFILE%\\Coding\\Databases"
+                                       ]
+                     },
+    "packageGroups":  {
+                          "core":  [
+                                       "neovim",
+                                       "git",
+                                       "gh",
+                                       "lazygit",
+                                       "ripgrep",
+                                       "fd",
+                                       "fzf",
+                                       "curl",
+                                       "wget",
+                                       "unzip",
+                                       "7zip",
+                                       "jq",
+                                       "wezterm",
+                                       "nerd-fonts-jetbrainsmono"
+                                   ],
+                          "languages":  [
+                                            "nodejs-lts",
+                                            "python",
+                                            "openjdk",
+                                            "dotnet-sdk",
+                                            "sqlite",
+                                            "mysql",
+                                            "zig",
+                                            "lua",
+                                            "luarocks",
+                                            "mingw",
+                                            "make",
+                                            "cmake"
+                                        ],
+                          "ides":  [
+                                       "intellijidea-community",
+                                       "visualstudio2022community"
+                                   ],
+                          "design":  [
+                                         "figma",
+                                         "gimp"
+                                     ],
+                          "devops":  [
+                                         "kubernetes-cli"
+                                     ],
+                          "social":  [
+                                         "discord"
+                                     ]
+                      },
+    "tools":  [
+                  {
+                      "name":  "Neovim",
+                      "command":  "nvim",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "Git",
+                      "command":  "git",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "GitHub CLI",
+                      "command":  "gh",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "LazyGit",
+                      "command":  "lazygit",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "Node.js",
+                      "command":  "node",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "npm",
+                      "command":  "npm",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "Python",
+                      "command":  "python",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "Java",
+                      "command":  "java",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  ".NET",
+                      "command":  "dotnet",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "SQLite",
+                      "command":  "sqlite3",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "MySQL",
+                      "command":  "mysql",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "Lua",
+                      "command":  "lua",
+                      "args":  [
+                                   "-v"
+                               ]
+                  },
+                  {
+                      "name":  "LuaRocks",
+                      "command":  "luarocks",
+                      "args":  [
+                                   "--version"
+                               ]
+                  },
+                  {
+                      "name":  "PowerShell",
+                      "command":  "powershell",
+                      "args":  [
+                                   "-NoProfile",
+                                   "-Command",
+                                   "$PSVersionTable.PSVersion.ToString()"
+                               ]
+                  },
+                  {
+                      "name":  "Zig",
+                      "command":  "zig",
+                      "args":  [
+                                   "version"
+                               ]
+                  },
+                  {
+                      "name":  "Kubectl",
+                      "command":  "kubectl",
+                      "args":  [
+                                   "version",
+                                   "--client"
+                               ]
+                  }
+              ],
+    "dotfiles":  [
+                     {
+                         "source":  "%LOCALAPPDATA%\\nvim",
+                         "target":  "nvim"
+                     },
+                     {
+                         "source":  "%USERPROFILE%\\.wezterm.lua",
+                         "target":  "wezterm.lua"
+                     },
+                     {
+                         "source":  "%USERPROFILE%\\Documents\\WindowsPowerShell",
+                         "target":  "WindowsPowerShell"
+                     },
+                     {
+                         "source":  "%APPDATA%\\lazygit",
+                         "target":  "lazygit"
+                     }
+                 ]
+}
