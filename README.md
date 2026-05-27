@@ -1,4 +1,9 @@
-﻿# devkit
+﻿> [!NOTE]
+> This is a legacy Windows development environment setup repository.
+>
+> It reflects my previous Windows workflow. My current daily development environment is Arch Linux with dwm.
+
+# devkit
 
 Windows development environment scripts for tools, folders, project templates, dotfiles, and Git workflow.
 
